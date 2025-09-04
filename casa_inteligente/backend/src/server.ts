@@ -3,8 +3,14 @@ import express from 'express';
 import deviceRoutes from './routes/dispositivos'; // Importa as rotas de dispositivo
 import roomRoutes from './routes/comodos'; // Importa as rotas de cômodos
 import sceneRoutes from './routes/cenas'; // Importa as rotas de cenas
+//import { Database } from "./models/Database";
+
+//Database.connect();
+
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+
 
 app.use(express.json());
 
